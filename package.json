@@ -1,0 +1,52 @@
+{
+  "name": "httpr-interceptor-header",
+  "version": "1.0.0",
+  "description": "HTTP Interceptor for Headers",
+  "main": "dist/httpr-interceptor-header.js",
+  "license": "MIT",
+  "author": {
+    "name": "David Recuenco",
+    "url": "https://github.com/RecuencoJones"
+  },
+  "contributors": [
+    {
+      "name": "Adrián Moreno",
+      "url": "https://github.com/Adriem"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RecuencoJones/httpr-interceptor-header"
+  },
+  "bugs": {
+    "url": "https://github.com/RecuencoJones/httpr-interceptor-header/issues"
+  },
+  "engines": {
+    "npm": ">= 3"
+  },
+  "peerDependencies": {
+    "httpr": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "0.0.32",
+    "@types/lodash": "^4.0.0",
+    "httpr": "../httpr",
+    "lodash": "^4.0.0",
+    "typescript": "2.2.1"
+  },
+  "scripts": {
+    "build": "echo \"Nothing to build\"",
+    "test": "echo \"No tests to run\""
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "keywords": [
+    "http",
+    "httpr",
+    "httpr-interceptor"
+  ]
+}
+
