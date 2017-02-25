@@ -6,8 +6,10 @@ describe('HeaderInterceptor class', () => {
     const interceptor = new HeaderInterceptor('Key', 'Value');
 
     const settings = interceptor.beforeRequest({
+      url: '/',
+      method: 'get',
       headers: {}
-    });
+    } as Httpr.HttpRequestSettings);
 
     expect(settings).to.have.property('headers')
       .that.has.property('Key')

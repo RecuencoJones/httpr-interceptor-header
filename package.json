@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "HTTP Interceptor for Headers",
   "main": "dist/httpr-interceptor-header.js",
+  "types": "defs/index.d.ts",
   "license": "MIT",
   "author": {
     "name": "David Recuenco",
@@ -69,4 +70,3 @@
     "httpr-interceptor"
   ]
 }
-
