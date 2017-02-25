@@ -29,6 +29,7 @@
     "@types/lodash": "^4.0.0",
     "@types/mocha": "2.2.27",
     "@types/sinon": "1.16.35",
+    "barrel-defgen": "~1.0.0",
     "chai": "3.5.0",
     "es6-promise": "4.0.5",
     "httpr": "^1.0.0",
@@ -51,9 +52,10 @@
     "webpack": "2.2.1"
   },
   "scripts": {
-    "build": "npm run build:umd && npm run build:min",
+    "build": "npm run build:umd && npm run build:min && npm run build:defs",
     "build:umd": "webpack --config build/webpack.config.js",
     "build:min": "webpack --config build/webpack-min.config.js",
+    "build:defs": "barrel-defgen --out defs/index.d.ts",
     "lint": "tslint -c tslint.json --project tsconfig.json",
     "doc": "typedoc --out doc --mode file app/",
     "test": "npm run test:unit",
