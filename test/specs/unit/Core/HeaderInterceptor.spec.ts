@@ -1,4 +1,5 @@
 import {expect} from 'chai';
+import {HttpRequestSettings} from 'httpr';
 import {HeaderInterceptor} from '../../../../app/Core/HeaderInterceptor';
 
 describe('HeaderInterceptor class', () => {
@@ -9,7 +10,7 @@ describe('HeaderInterceptor class', () => {
       url: '/',
       method: 'get',
       headers: {}
-    } as Httpr.HttpRequestSettings);
+    } as HttpRequestSettings);
 
     expect(settings).to.have.property('headers')
       .that.has.property('Key')

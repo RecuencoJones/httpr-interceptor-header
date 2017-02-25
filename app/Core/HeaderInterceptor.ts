@@ -1,6 +1,6 @@
-import * as Httpr from 'httpr';
+import {HttprInterceptor, HttpRequestSettings} from 'httpr';
 
-export class HeaderInterceptor extends Httpr.HttprInterceptor {
+export class HeaderInterceptor extends HttprInterceptor {
   protected header: string;
   protected value: string;
 
@@ -24,7 +24,7 @@ export class HeaderInterceptor extends Httpr.HttprInterceptor {
    * @param {HttpRequestSettings} settings - current request settings.
    * @returns {HttpRequestSettings} modified settings.
    */
-  public beforeRequest(settings: Httpr.HttpRequestSettings): Httpr.HttpRequestSettings {
+  public beforeRequest(settings: HttpRequestSettings): HttpRequestSettings {
     settings.headers[this.header] = this.value;
 
     return settings;
