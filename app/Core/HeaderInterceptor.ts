@@ -1,9 +1,18 @@
 import {HttprInterceptor, HttpRequestSettings} from 'httpr';
 
+/**
+ * HTTP Header interceptor.
+ */
 export class HeaderInterceptor extends HttprInterceptor {
   protected header: string;
   protected value: string;
 
+  /**
+   * Create a header interceptor instance.
+   *
+   * @param {string} header - header key.
+   * @param {string} value - header value.
+   */
   public constructor(header: string, value: string) {
     super();
 
